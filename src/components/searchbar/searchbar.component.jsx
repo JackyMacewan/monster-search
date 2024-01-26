@@ -4,7 +4,7 @@ import "./searchbar.styles.css"
 
 export const SearchBar = ({placeholder, handleInput}) => (
     <input 
-        classNmae="seach"
+        className="search"
         type="search"
         placeholder={placeholder}
         onChange={handleInput}

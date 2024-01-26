@@ -14,7 +14,7 @@ function App() {
       setMonsters(users);
     };
     fetchUsers();
-    }, []);
+    }, []); //the empty[] mean that it will load only on initial (once only), without it will keep requesting nonstop.
 
   //for handling user input
   const [searchInput, setSearchInput] = useState(""); //initial state is an empty string value
@@ -33,7 +33,7 @@ function App() {
       filtered= monsters.filter(monster => monster.name.toLowerCase().includes(searchInput.toLowerCase())
       );
     }
-    setFilteredMonster(filtered);}, [monsters, searchInput]);
+    setFilteredMonster(filtered);}, [monsters, searchInput]); //two dependcies state
 
  
 
